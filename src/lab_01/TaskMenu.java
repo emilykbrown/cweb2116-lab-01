@@ -27,8 +27,9 @@ public class TaskMenu {
 
         switch (userInput) {
             case "1":
-                //TaskOne taskOne = new TaskOne();
-                new TaskOneImplementation.execute();
+                TaskOne taskOne = new TaskOne();
+                taskOne.execute();
+                //new TaskOneImplementation.execute();
                 break;
             case "2":
                 TaskThree taskThree = new TaskThree();

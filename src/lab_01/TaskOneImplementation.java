@@ -22,8 +22,9 @@ public class TaskOneImplementation {
         System.out.println("Favorite Color: " + favoriteColor);
         System.out.println("Current Year: " + currentYear);
 
-        // Wait for user input to close (similar to Console.ReadLine() in C#)
-        myScanner.nextLine();
+        Scanner myScanner = null;
+		// Wait for user input to close (similar to Console.ReadLine() in C#)
+        //myScanner.nextLine();
     }
 
     // Method to call the task from a main class
