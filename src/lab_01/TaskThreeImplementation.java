@@ -1,4 +1,4 @@
-package lab_01; 
+package lab_01;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class TaskThreeImplementation {
 
         // Variables
         int age = 25;
-        double heightInMeters = 1.6256; // Java uses double for floating-point numbers
+        double heightInMeters = 1.6256;
         char favoriteLetter = 'E';
         boolean likesProgramming = true;
 
@@ -26,7 +26,7 @@ public class TaskThreeImplementation {
         // Wait for user input to close
         System.out.println("Press Enter to continue...");
         try (Scanner scanner = new Scanner(System.in)) {
-            scanner.nextLine();
+            scanner.nextLine(); // Wait for user input to proceed
         } catch (Exception e) {
             System.out.println("An error occurred while waiting for input.");
         }
@@ -34,6 +34,6 @@ public class TaskThreeImplementation {
 
     // Main method to test the class independently
     public static void main(String[] args) {
-        new TaskThree(); // Creates an instance to execute the constructor
+        new TaskThreeImplementation(); // Creates an instance to execute the constructor
     }
 }

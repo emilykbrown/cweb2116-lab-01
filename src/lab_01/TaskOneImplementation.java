@@ -23,8 +23,6 @@ public class TaskOneImplementation {
         System.out.println("Current Year: " + currentYear);
 
         Scanner myScanner = null;
-		// Wait for user input to close (similar to Console.ReadLine() in C#)
-        //myScanner.nextLine();
     }
 
     // Method to call the task from a main class

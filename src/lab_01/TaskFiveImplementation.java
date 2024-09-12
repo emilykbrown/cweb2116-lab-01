@@ -20,14 +20,14 @@ public class TaskFiveImplementation {
         System.out.println("Temperature in Celsius: " + temperatureCelsius);
         System.out.println("Is Student: " + isStudent);
 
-        try (// Wait for user input to close
-		java.util.Scanner scanner = new java.util.Scanner(System.in)) {
-			System.out.println("Press Enter to continue...");
-			scanner.nextLine();
-		}
+        // Wait for user input to close
+        try (java.util.Scanner scanner = new java.util.Scanner(System.in)) {
+            System.out.println("Press Enter to continue...");
+            scanner.nextLine();
+        }
     }
 
     public static void main(String[] args) {
-        new TaskFive();
+        new TaskFiveImplementation(); // Corrected to instantiate TaskFiveImplementation
     }
 }

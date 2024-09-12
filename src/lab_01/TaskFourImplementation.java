@@ -21,14 +21,16 @@ public class TaskFourImplementation {
         System.out.println("Radius: " + radius);
         System.out.println("Area of the circle: " + area);
 
-        try (// Wait for user input to close
-		java.util.Scanner scanner = new java.util.Scanner(System.in)) {
-			System.out.println("Press Enter to continue...");
-			scanner.nextLine();
-		}
+        // Wait for user input to close
+        System.out.println("Press Enter to continue...");
+        try (Scanner scanner = new Scanner(System.in)) {
+            scanner.nextLine();
+        } catch (Exception e) {
+            System.out.println("An error occurred while waiting for input.");
+        }
     }
 
     public static void main(String[] args) {
-        new TaskFour();
+        new TaskFourImplementation(); // Corrected to instantiate TaskFourImplementation
     }
 }
